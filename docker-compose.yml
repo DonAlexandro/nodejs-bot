@@ -4,5 +4,4 @@ services:
     build: .
     ports:
       - '5005:5005'
-    volumes:
-      - '.:/app'
+    container_name: 'nodejs-telegram-bot'

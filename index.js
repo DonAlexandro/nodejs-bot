@@ -51,10 +51,10 @@ function start() {
       return startGame(chatId);
     }
 
-    if (data === chats[chatId]) {
+    if (data == chats[chatId]) {
       return bot.sendMessage(chatId, `Gratz! The number was exaclty ${chats[chatId]}`, againOptions);
     } else {
-      return bot.sendMessage(chatId, `Sorry, but you lost, the number was ${chats[chatId]}`, againOptions);
+      return bot.sendMessage(chatId, `Sorry, but you fucked up, the number was ${chats[chatId]}`, againOptions);
     }
   });
 }
