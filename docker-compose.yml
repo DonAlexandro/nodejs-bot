@@ -5,3 +5,8 @@ services:
     ports:
       - '5005:5005'
     container_name: 'nodejs-telegram-bot'
+    depends_on:
+      - redis
+  redis:
+    image: redis
+    container_name: 'nodejs-bot-db'
